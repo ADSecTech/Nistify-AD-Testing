@@ -43,5 +43,7 @@ typedef struct Config {
 void readConfig(Config* conf);
 
 // Password Checking
+#include <cctype>
 bool checkPassword(string proposed_password, string password_hash, string* api_results);
+void toUpper(string* str);
 

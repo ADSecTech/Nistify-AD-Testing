@@ -63,14 +63,9 @@ int main()
     // End
     accessApi(conf.api_server.c_str(), end_conversion, &output);
     if (checkPassword(proposed_password, hash, &output))
-        cout << "[!] Password was not rejected" << endl;
+        cout << "[!] No! Password was not rejected" << endl;
     else
         cout << "[*] Password was rejected as expected" << endl;
 
+    cout << "[*] Any 'No' entries denoted with the exclamation point '!' may be issues that require investigation." << endl;
 }
-
-
-
-
-
-
