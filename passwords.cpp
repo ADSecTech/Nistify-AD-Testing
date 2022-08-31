@@ -2,11 +2,11 @@
 
 // Returns true if the proposed password meets the minimum length (8 chars) and is not
 // in api_results
-bool checkPassword(string proposed_password, string password_hash, string* api_results)
+bool checkPassword(string *proposed_password, string password_hash, string* api_results)
 {
 	// Check length. This is the only other requirement from the NIST documents. 
 	// This should be handled by system policy but just in case. 
-	if (proposed_password.length() < 8)
+	if (proposed_password->length() < 8)
 		return false;
 
 	// Check that the password is not in the list 

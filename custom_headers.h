@@ -16,7 +16,7 @@ using std::endl;
 // Crypto
 // Uses smallsha1 - https://code.google.com/archive/p/smallsha1/
 #include "sha1.h"
-void getHash(string plaintext, string *hashhex);
+void getHash(string *plaintext, string *hashhex);
 
 // Networking
 // WinHTTP is a default Windows header file and the 5.1 version does not require IE and is supported up to Windows 11 now. 
@@ -44,6 +44,6 @@ void readConfig(Config* conf);
 
 // Password Checking
 #include <cctype>
-bool checkPassword(string proposed_password, string password_hash, string* api_results);
+bool checkPassword(string *proposed_password, string password_hash, string* api_results);
 void toUpper(string* str);
 

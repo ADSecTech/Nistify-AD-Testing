@@ -41,7 +41,7 @@ int main()
     string proposed_password = "password";
     cout << "[*] The proposed password: " << proposed_password << endl;
     string hash;
-    getHash(proposed_password, &hash);
+    getHash(&proposed_password, &hash);
     cout << "[*] The resultant hash: " << hash << endl;
 
     // Testing full connection process
@@ -62,7 +62,7 @@ int main()
     LPCWSTR end_conversion = conversion.c_str();
     // End
     accessApi(conf.api_server.c_str(), end_conversion, &output);
-    if (checkPassword(proposed_password, hash, &output))
+    if (checkPassword(&proposed_password, hash, &output))
         cout << "[!] No! Password was not rejected" << endl;
     else
         cout << "[*] Password was rejected as expected" << endl;

@@ -38,4 +38,6 @@ C:\Users\TristanHenning\Documents\sumproj\cpp_testing\nistify_testing\nistify_te
               _Iter=std::_String_iterator<std::_String_val<std::_Simple_types<wchar_t>>>,
               _Alloc=std::allocator<char>
           ]
+  passwords.cpp
+  Generating Code...
   nistify_testing.vcxproj -> C:\Users\TristanHenning\Documents\sumproj\cpp_testing\nistify_testing\x64\Debug\nistify_testing.exe
